@@ -7,10 +7,11 @@
       name="description"
       content="FTP is horrible to deal with WP Pusher solve that issue."
     />
+    <link rel="stylesheet" href="main.css" />
     <title>wp Pusher checkout</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="nav">
         <svg
           class="wp_pusher logo"
@@ -53,108 +54,155 @@
       </nav>
       <hr />
     </header>
-    <main class="main">
-      <section class="checkout">
-        <header>
-          <h1 class="header-primary">Checkout</h1>
-          <hr />
-        </header>
-        <form class="checkout__form">
-          <div class="checkout-basic">
-            <span class="checkout__number">1</span>
-            <span class="checkout__text">Your Basic Information</span>
-            <div>
-              <label class="checkout__label" for="firstName">First Name</label>
-              <input class="checkout__input" type="text" id="firstName" />
-            </div>
-            <div>
-              <label class="checkout__label" for="lastName">Last Name</label>
-              <input class="chekout__input" type="text" id="lastName" />
-            </div>
-            <div>
-              <label class="checkout__label" for="email">Email</label>
-              <input class="checkout__input" type="email" id="email" />
-            </div>
-          </div>
-          <div class="checkout-payment">
-            <div>
-              <span class="checkout-payment__number">2</span>
-              <span class="checkout-payment__text"
-                >Your Payment Information</span
-              >
-            </div>
-            <div>
-              <label class="checkout__label" for="credit">Credit Card</label>
-              <input
-                class="checkou__input"
-                type="text"
-                id="credit"
-                placeholder="card Number"
-              />
-              <input
-                class="checkout__input"
-                type="text"
-                id="credit"
-                placeholder="MM"
-              />
-              <input
-                class="checkout__input"
-                type="text"
-                id="credit"
-                placeholder="/YY"
-              />
-              <input
-                class="checkout__input"
-                type="text"
-                id="credit"
-                placeholder="CVC"
-              />
-            </div>
-          </div>
-          <button class="btn">Buy WP Pusher</button>
-        </form>
-        <div class="checkout-support">
-          <span>?</span> <span>Need any help.</span>Do'nt hesitate to
-          <span>contact support!</span>
-        </div>
-        <div class="checkout__banner">Powered by stripe</div>
-      </section>
-      <section class="sidebar">
-        <div class="sidebar-plan">
-          <header class="sidebar-plan__header">
-            <h2 class="header-secondary">freelancer</h2>
-            <span class="sidebar-plan__sign">$</span>
-            <span class="sidebar-plan__price">99</span>
-            <span class="sidebar-plan__billcycle">/year</span>
-            <p class="sidebar-plan__text">Automatically renews after 1 year</p>
+    <div class="container">
+      <main class="main">
+        <section class="checkout">
+          <header>
+            <h1 class="header-primary checkout__header">Checkout</h1>
+            <hr />
           </header>
-          <ul class="sidebar-plan__list">
-            <li class="sidebar-plan__item">Use on 5 client sites</li>
-            <li class="sidebar-plan__item">Private repositories</li>
-            <li class="sidebar-plan__item">Email support</li>
-          </ul>
-          <div class="sidebar-plan__text">
-            <p>Need 20 client Sites?</p>
-            <p><a href="#">Switch to the Agency plan</a></p>
+          <form class="checkout__form">
+            <div class="checkout-basic">
+              <span class="checkout__number">1</span>
+              <span class="checkout__text">Your Basic Information</span>
+              <div class="checkout-block-1">
+                <div class="checkout-block__first">
+                  <label class="checkout__label" for="firstName"
+                    >First Name</label
+                  >
+                  <input
+                    class="checkout__input-1"
+                    type="text"
+                    id="firstName"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="checkout-block__last">
+                  <label class="checkout__label" for="lastName"
+                    >Last Name</label
+                  >
+                  <input
+                    class="checkout__input-1"
+                    type="text"
+                    id="lastName"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              <div class="checkout-block__email">
+                <label class="checkout__label" for="email">Email</label>
+                <input
+                  class="checkout__input-2"
+                  type="email"
+                  id="email"
+                  placeholder="JaneDoe@example.com"
+                />
+              </div>
+            </div>
+            <div class="checkout-payment">
+              <div class="checkout-block-2">
+                <span class="checkout__number">2</span>
+                <span class="checkout__text">Your Payment Information</span>
+              </div>
+              <div>
+                <label class="checkout__label" for="credit">Credit Card</label>
+                <div class="checkout-block-3">
+                  <input
+                    class="checkout__input-3"
+                    type="text"
+                    id="credit"
+                    placeholder="card Number"
+                  />
+                  <input
+                    class="checkout__input-3"
+                    type="text"
+                    id="credit"
+                    placeholder="MM/"
+                  />
+                  <input
+                    class="checkout__input-3"
+                    type="text"
+                    id="credit"
+                    placeholder="YY"
+                  />
+                  <input
+                    class="checkout__input-3"
+                    type="text"
+                    id="credit"
+                    placeholder="CVC"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="checkout-btn">
+              <button class="btn">Buy WP Pusher</button>
+            </div>
+          </form>
+          <div class="checkout-support">
+            <span class="checkout-support__mark">?</span>
+            <span class="checkout-support__bold">Need any help.</span> Do'nt
+            hesitate to
+            <span class="checkout-support__contact"
+              ><a href="#">contact support!</a></span
+            >
           </div>
+          <div class="checkout-block-4">
+            <span class="checkout__banner">Powered by <span>stripe</span></span>
+          </div>
+        </section>
+        <section class="sidebar">
+          <div class="sidebar-plan">
+            <header class="sidebar-plan__header">
+              <h2 class="header-secondary">Freelancer</h2>
+              <div class="sidebar-plan__block">
+                <div class="sidebar-plan__block-1">
+                  <span class="sidebar-plan__sign">$</span>
+                  <span class="sidebar-plan__price">99</span>
+                </div>
+                <span class="sidebar-plan__billcycle">/ year</span>
+              </div>
+              <p class="sidebar-plan__text">
+                Automatically renews <br />after 1 year
+              </p>
+            </header>
+            <ul class="sidebar-plan__list">
+              <li class="sidebar-plan__item">Use on 5 client sites</li>
+              <li class="sidebar-plan__item">Private repositories</li>
+              <li class="sidebar-plan__item">Email support</li>
+            </ul>
+            <div class="sidebar-plan__info">
+              <p>Need <strong>20</strong> client Sites?</p>
+              <p>
+                <a class="sidebar-plan__link" href="#"
+                  >Switch to the Agency plan</a
+                >
+              </p>
+            </div>
+          </div>
+          <hr class="middle-line" />
+          <figure class="sidebar-review">
+            <blockquote class="sidebar-review__text">
+              FTP is horrible to deal with.<br />
+              <strong>WP Pusher</strong> solves that issue,<br />
+              and the customer support is<br />
+              awesome!
+            </blockquote>
+            <figcaption class="sidebar-review__user">
+              <img
+                class="sidebar-review__photo"
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="user photo"
+              />
+              <div class="sidebar-review__name">Kirk Beard</div>
+            </figcaption>
+          </figure>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__text">
+          &copy; 2023 WP Pusher IVS. <a href="#">Terms of Services</a>
         </div>
-        <hr />
-        <figure class="sidebar-review">
-          <blockquote class="sidebar-review__text">
-            FTP is horrible to deal with. WP Pusher solves that issue, and the
-            customer support is awesome!
-          </blockquote>
-          <figcaption class="sidebar-review__user">
-            <img class="sidebar-review__photo" src="#" alt="" srcset="" />
-            <div class="sidebar-review__name">Kirk Beard</div>
-          </figcaption>
-        </figure>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__text">
-        &copy; 2023 WP Pusher IVS. <a href="#">Terms of services</a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
